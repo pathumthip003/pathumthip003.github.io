@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="สินค้าของเราคือชุดตุ๊กตาน่ารักหลากหลาย">
+    <title>สินค้าของเรา - ตุ๊กตาน่ารัก</title>
+    <link rel="stylesheet" href="styles.css"> <!-- เชื่อมโยงไฟล์ CSS -->
+</head>
+<body>
+    <style>/* รีเซ็ตค่าเริ่มต้น */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* สไตล์พื้นฐาน */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* Header */
+        header {
+            background-color: #9169ff; /* สีชมพูสด */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header .logo h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        
+        header nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        header nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        
+        header nav ul li a:hover {
+            background-color: #845be4;
+        }
+        
+        /* สินค้าของเรา */
+        .featured-products {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #e9b0fa;
+        }
+        
+        .featured-products h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        
+        .product-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .product-item {
+            width: 30%;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        .product-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-item img {
+            width: 80%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        
+        .product-item h3 {
+            font-size: 22px;
+            color: #333;
+        }
+        
+        .product-item p {
+            font-size: 20px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        
+        .product-item .btn {
+            background-color: #b769ff;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        .product-item .btn:hover {
+            background-color: #cd5be4;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        footer a {
+            color: #c369ff;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>ตุ๊กตาน่ารัก</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="003.html">หน้าแรก</a></li>
+                <li><a href="products.html">สินค้าของเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- สินค้าของเรา -->
+    <section class="featured-products">
+        <h2>สินค้าของเรา</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="img/แมวเมี๊ยว.jpg" alt="แมวเมี๊ยว">
+                <h3>แมวเมี๊ยว</h3>
+                <p>ตุ๊กตาแมวเมี๊ยว</p>
+                <p>ราคา: 499 บาท</p>
+                <a href="#" class="btn">ซื้อเลย</a>
+            </div>
+            <div class="product-item">
+                <img src="img/แมวเบื่อ.jpg" alt="แมวเบื่อ">
+                <h3>แมวเบื่อ</h3>
+                <p>ตุ๊กตาแมวเบื่อ</p>
+                <p>ราคา: 350 บาท</p>
+                <a href="#" class="btn">ซื้อเลย</a>
+            </div>
+            <div class="product-item">
+                <img src="img/แมวน้ำ.jpg" alt="แมวน้ำ">
+                <h3>แมวน้ำ</h3>
+                <p>ตุ๊กตาแมวน้ำ</p>
+                <p>ราคา: 300 บาท</p>
+                <a href="#" class="btn">ซื้อเลย</a>
+            </div>
+            <div class="product-item">
+                <img src="img/แมว.jpg" alt="แมวยืด">
+                <h3>แมวยืด</h3>
+                <p>ตุ๊กตาแมวยืด</p>
+                <p>ราคา: 200 บาท</p>
+                <a href="#" class="btn">ซื้อเลย</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 ตุ๊กตาน่ารัก. สงวนลิขสิทธิ์.</p>
+        <p>ติดต่อเรา: <a href="mailto:contact@dollstore.com">nanine@gmail.com</a></p>
+    </footer>
+</body>
+</html>
